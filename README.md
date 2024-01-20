@@ -12,10 +12,11 @@ Get a theme:<br>
 Get-PoshThemes
 
 update theme:<br>
-C:\Users\"username"\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+C:\Users\username\Documents\PowerShell\Microsoft.PowerShell_profile.ps1<br>
+if the file doesn't exist create it.<br>
 
 Microsoft.PowerShell_profile.ps1:<br>
-oh-my-posh init pwsh --config 'C:\Users\"username"\AppData\Local\Programs\oh-my-posh\themes\rudolfs-light.omp.json' | Invoke-Expression <br><br>
+oh-my-posh init pwsh --config 'C:\Users\username\AppData\Local\Programs\oh-my-posh\themes\rudolfs-light.omp.json' | Invoke-Expression <br><br>
 "rudolfs-light.omp.json" -- change to whatever theme you want
 
 # Java
