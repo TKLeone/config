@@ -33,7 +33,7 @@ config.background = {
 
   {
     source = {
-      File =  'C:/Users/Emmanuel/Pictures/spike2.png' -- edit image filepath
+      File =  'C:/Users/username/Pictures/spike2.png' -- edit image filepath
     },
     height ='100%',
     width = '100%',
@@ -42,7 +42,7 @@ config.background = {
 
   {
     source = {
-      File = 'C:/Users/Emmanuel/Pictures/black.png' -- edit image filepath
+      File = 'C:/Users/username/Pictures/black.png' -- edit image filepath
     },
     repeat_x = "Mirror",
     width = 'Cover',
