@@ -1,0 +1,30 @@
+let mapleader=" "
+
+set ReplaceWithRegister
+set history=1000
+set guicursor=n-v-c:block,i-ci-ve:ver30,a:blinkon0
+
+let g:argtextobj_pairs="[:],(:),<:>"
+set visualbell
+set noerrorbells
+set showmode
+set so=5
+set incsearch
+set nu
+set scrolloff=12
+set number relativenumber
+
+nnoremap <silent> <C-l> :nohlsearch<CR>
+nmap gd <Action>(GotoDeclaration)
+nmap gr <Action>(CallHierarchy)
+nmap gl <Action>(QuickImplementations)
+nmap <leader>e <Action>(ShowErrorDescription)
+nmap <C-d> <C-d>zz
+nmap <C-u> <C-u>zz
+nmap <C-f> <C-f>zz
+nmap <C-b> <C-b>zz
+nmap <C-o> <C-o>zz
+nmap <C-i> <C-i>zz
+nnoremap d "_d
+nnoremap dd "_dd
+
