@@ -1,5 +1,5 @@
 # config
-config for wezterm, neovim, oh-my-posh powershell
+config for wezterm, neovim, oh-my-posh, powershell, intellij
 
 # wezterm
 install:<br>
@@ -24,9 +24,12 @@ update theme:<br>
 C:\Users\username\Documents\PowerShell\Microsoft.PowerShell_profile.ps1<br>
 if the file doesn't exist create it.<br>
 
-Microsoft.PowerShell_profile.ps1:<br>
+init via terminal:<br>
 oh-my-posh init pwsh --config 'C:\Users\username\AppData\Local\Programs\oh-my-posh\themes\rudolfs-light.omp.json' | Invoke-Expression <br><br>
-"rudolfs-light.omp.json" -- change to whatever theme you want
+"rudolfs-light.omp.json" -- change to whatever theme you want<br><br>
+put same command you used to init inside the Microsoft.PowerShell_profile.ps1 file<br><br>
+
+if you want to edit theme you can go to the directory defined in the init file path and edit as you please.
 
 # Neovim
 install:<br>
@@ -36,7 +39,18 @@ Install ripgrep:<br>
 choco install ripgrep *or*<br>
 winget install BurntSushi.ripgrep.MSVC
 
-replace nvim folder in appdata directory with updated one from repo<br><br>
-may have to go in config files and :so them all to update. Same goes for Lazy and Mason package managers.
+If there exists a current nvim folder, replace it in appdata directory with updated one from repo.<br><br>
+May have to go in config files and :so them all to update.<br><br>
+May have to Update/Sync plugins in Lazy.<br> 
+  You do this by using the command :Lazy then press "U" or "S" <br><br>
+May have to reinstall LSPs in Mason<br>
+  You do this with the command :MasonUninstall "package" and :MasonInstall "package".<br>
+  If you get an error saying you cant modify, close neovim, go back in neovim and try it without opening a file. or use :set ma.
+
 # Java
-for java development go to https://download.eclipse.org/jdtls/milestones/?d and update the ftplugin/java.lua cmd{} file path to the correct location
+To get the java LSP go to: https://download.eclipse.org/jdtls/milestones/?d and update the ftplugin/java.lua cmd{} file path to the correct location
+
+# IntelliJ Vim Mode
+Install:<br>
+Settings -> Plugins -> Marketplace -> "IdeaVim"<br>
+copy .ideavimrc inside home directory
