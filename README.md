@@ -4,8 +4,8 @@ config for wezterm, neovim, oh-my-posh, powershell, intellij
 # wezterm
 install:<br>
 winget install wezterm<br><br>
-place the wezterm directory inside the .config directory in your home directory.<br><br>
-download the image files and place them either in the "Pictures" directory in your home directory or your .config directory alongside your wezterm.lua file.<br>
+place the wezterm folder inside the .config folder in your home directory.<br><br>
+download the image files and place them either in the "Pictures" folder in your home directory or your .config folder alongside your wezterm.lua file.<br>
 Update the file path in your config.background{}.
 
 # PowerShell
@@ -27,7 +27,7 @@ init via terminal:<br>
 oh-my-posh init pwsh --config 'C:\Users\username\AppData\Local\Programs\oh-my-posh\themes\rudolfs-light.omp.json' | Invoke-Expression <br><br>
 "rudolfs-light.omp.json" -- change to whatever theme you want.<br><br>
 
-if you want to edit theme you can go to the directory defined in the init file path and edit as you please.
+if you want to edit theme you can go to the file defined in the init file path and edit as you please.
 
 update theme:<br>
 C:\Users\username\Documents\PowerShell\Microsoft.PowerShell_profile.ps1<br>
@@ -44,7 +44,7 @@ Install ripgrep:<br>
 choco install ripgrep *or*<br>
 winget install BurntSushi.ripgrep.MSVC
 
-If there exists a current nvim directory, replace it in appdata directory with updated one from repo.<br><br>
+If there exists a current nvim folder, replace it in appdata directory with updated one from repo.<br><br>
 May have to go in config files and :so them all to update.<br><br>
 May have to Update/Sync plugins in Lazy.<br> 
   You do this by using the command :Lazy then press "U" or "S" <br><br>
